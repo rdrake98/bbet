@@ -1,10 +1,8 @@
 {Request, RequestPeriod} = require '../request'
 
 # better to mock time zones in perfect world
-gmt = ->
-  process.env.TZ == "GMT"
-japan = ->
-  process.env.TZ == "Japan"
+gmt = -> process.env.TZ == "GMT"
+japan = -> process.env.TZ == "Japan"
 
 date1 = new Date Date.parse "2013-02-03T21:31:27.847"
 date2 = new Date Date.parse "2013-02-28T13:07:23.543"
